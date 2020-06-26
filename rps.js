@@ -22,38 +22,52 @@ else
 
 console.log("Computer chose " + computerChoice);
 
-var compare = function(playerChoice, computerChoice)
+var result = function(playerChoice, computerChoice)
 {
   if(playerChoice === computerChoice)
   {
-      console.log("It's a tie!")
+    alert("computer chose:", computerChoice);
+    console.log("It's a tie!")
+      alert("It's a tie!")
   }
   else if (playerChoice === "rock" && computerChoice === "scissors")
   {
-      console.log("You win!");
+    alert("computer chose:", computerChoice);
+        console.log("You win!");
+      alert("You won!");
   }
   else if (playerChoice === "rock" && computerChoice === "paper")
   {
-      console.log("You lose!");
+    alert("computer chose:", computerChoice);
+        console.log("You lose!");
+      alert("You lost!")
   }
   else if (playerChoice === "paper" && computerChoice === "rock")
   {
-      console.log("You win!");
+    alert("computer chose:", computerChoice);
+        console.log("You won!");
+      alert("You won!")
   }
   else if (playerChoice === "paper" && computerChoice === "scissors")
   {
-      console.log("You lose!");
+    alert("computer chose:", computerChoice);
+        console.log("You lost!");
+      alert("You lost!")
   }
   else if (playerChoice === "scissors" && computerChoice === "rock")
   {
-      console.log("You lose!");
+    alert("computer chose:", computerChoice);
+        console.log("You lost!");
+      alert("You lost!")
   }
   else if (playerChoice === "scissors" && computerChoice === "paper")
   {
-      console.log("You win!");
+      alert(computerChoice);
+      console.log("You won!");
+      alert("You won!")
   }
 }
 
 // calling the compare function
-compare(playerChoice, computerChoice);
+result(playerChoice, computerChoice);
 console.log("player chose:", playerChoice, "& computer chose:", computerChoice);

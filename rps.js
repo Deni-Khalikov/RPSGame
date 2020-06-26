@@ -7,45 +7,47 @@ computerChoice = Math.random();
 // to see computer choice
 console.log(computerChoice);
 
-if(computerChoice <=0.33)
+if(computerChoice <=.33)
 {   
     computerChoice = "rock"
 }
-else if(computerChoice >= 0.33 && computerChoice <= 0.67)
+else if(computerChoice >= .33 && computerChoice <= .67)
 {
     computerChoice = "paper"
 }
-else(computerChoice < 0.68)
+else
 {
     computerChoice = "scissors"
 }
+
+console.log("Computer chose" + computerChoice);
 
 var compare = function(choice1, choice2)
 {
     if(choice1 == choice2)
     {
-        return "it's a tie!";
+        console.log("it's a tie!");
     }
     else if(choice1 === "rock")
     {
         if(choice2 === "scissors")
         {
-            return "rock wins";
+            console.log("rock wins");
         }
         else
         {
-                return "paper wins";
+            console.log("paper wins");
         }
     }
     else if(choice2 === "paper")
     {
         if(choice2 === "rock")
         {
-            return "paper wins!";
+            console.log("paper wins!");
         }
         else
         {
-            return "scissors win";
+            console.log("scissors win");
         }
     }
 
